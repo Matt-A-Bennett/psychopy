@@ -35,12 +35,9 @@ fixation_rotate_rate = 2
 fixation_orientations = (0, 45)
 
 # this will appear just before C keypress and requires button 1 to be pressed move on
-insructions_to_subjects = ''' \n\n\nKeep you eyes on the red cross in the center at
-all times.
-
-When the red cross rotates, press button 1.
-
-Press 1 to continue.'''
+insructions_to_subjects = '''Keep you eyes on the red cross in the center at
+all times.  \nWhen the red cross rotates, press button 1.  \nPress 1 to
+continue.'''
 
 screen_size = 768 # in pix
 screen_centre = screen_size/2
@@ -191,7 +188,7 @@ web_line = visual.Line(win,name='Line',start=(-1.4, 0),end=(1.4, 0),pos=[0, 0],l
                        lineColor=[1.0, 1.0, 1.0],lineColorSpace='rgb',opacity=1,interpolate=True)
 
 # fixation cross made up of a line element
-fixation_cross = visual.Line(win,name='Line',start=(-0.01, 0),end=(0.01, 0),pos=[0, 0],lineWidth=2,
+fixation_cross = visual.Line(win,name='Line',start=(-0.03, 0),end=(0.03, 0),pos=[0, 0],lineWidth=2,
                        lineColor='red',lineColorSpace='rgb',opacity=1,interpolate=True)
 
 # intial fixation cross orientation is just the first as default
